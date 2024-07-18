@@ -1,0 +1,943 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "M PLUS Rounded 1c",sans-serif;
+}
+body{
+    background-color: rgb(253, 248, 255);
+    overflow-x: hidden;
+}
+.logo{
+    width: max-content;
+    margin: 50px auto;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+}
+nav .search-icon{
+    position: relative;
+    top: 30px;
+}
+nav ul li{
+    position: relative;
+    justify-content: center;
+    left: -130px;
+    margin: 10px;
+    float: left;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+nav a{
+    text-decoration: none;
+    color: rgba(10, 10, 10, 1);
+    transition: .2s;
+}
+nav a:hover{
+    color: rgba(151, 151, 151, 1);
+}
+nav .icons{
+    display: flex;
+    gap: 20px;
+    right: 250px;
+    position: relative;
+    top: 30px;
+}
+
+/* ---- CONTAINER 1 ----*/
+
+.conatiner1 img{
+    width: 100%;
+    position: relative;
+    top: 70px;
+}
+.info-container{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    top: -270px;
+    left: 650px;
+    background: rgba(0, 0, 0, 0.36);
+}
+.info-container h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    top: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+.info-container p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 45px;
+    left: 85px;
+    width: 450px;
+    font-size: 0.86rem;
+    color: rgba(236, 236, 236, 1);
+}
+.info-container button{
+    position: relative;
+    top: 90px;
+    left: 85px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.info-container button:hover{
+    background-color: rgba(43, 43, 43, 0.616);
+    color: #fff;
+    
+}
+
+
+/* ---- PRODUCTS ---- */
+
+
+.products h1{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100px;
+    top: -150px;
+    font-weight: 600;
+    color: rgba(17, 16, 16, 1);
+    border-bottom: 3px solid rgba(196, 196, 196, 1);
+}
+.products p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -100px;
+    color: rgba(97, 97, 97, 1);
+}
+
+/* ---- CONTAINER 2 ---- */
+
+.conatiner2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 259px;
+    gap: 20px;
+    position: relative;
+    width: 70%;
+    max-width: max-content;
+    left: 150px;
+}
+.conatiner2 .bathroom img{
+    width: 440px;
+}
+.bathroom .bth{
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    width: 410px;
+    height: 80px;
+    background-color: rgba(17, 16, 16, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    top: -75px;
+    left: 15px;
+}
+.bathroom .bth h3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    color: rgba(255, 255, 255, 1);
+}
+.bathroom .bth p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    color: rgba(180, 180, 180, 1);
+    font-size: 0.8rem;
+}
+
+.conatiner2 .marble img{
+    width: 259px;
+}
+.marble .mrb{
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    width: 240px;
+    height: 80px;
+    background-color: rgba(17, 16, 16, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    top: -75px;
+    left: 10px;
+}
+.marble .mrb h3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    color: rgba(255, 255, 255, 1);
+}
+.marble .mrb p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    color: rgba(180, 180, 180, 1);
+    font-size: 0.8rem;
+}
+
+
+.conatiner2 .outdoor img{
+    width: 340px;
+}
+.outdoor .outdr{
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    width: 315px;
+    height: 80px;
+    background-color: rgba(17, 16, 16, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    top: 140px;
+    left: 751px;
+}
+.outdoor .outdr h3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    color: rgba(255, 255, 255, 1);
+}
+.outdoor .outdr p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    color: rgba(180, 180, 180, 1);
+    font-size: 0.7rem;
+}
+
+.conatiner2 .kitchen{
+    margin-top: -12px;
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+.conatiner2 .kitchen img{
+    width: 340px;
+}
+.kitchen .ktchn{
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    width: 315px;
+    height: 80px;
+    background-color: rgba(17, 16, 16, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    top: 404px;
+    left: 751px;
+}
+.kitchen .ktchn h3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    color: rgba(255, 255, 255, 1);
+}
+.kitchen .ktchn p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    color: rgba(180, 180, 180, 1);
+    font-size: 0.7rem;
+}
+
+
+/* ---- CONTAINER 3 ---- */
+
+.conatiner3 img{
+    position: relative;
+    width: max-content;
+    max-width: 960px;
+    left: 270px;
+    top: 80px;
+}
+.conatiner3 .vision{
+    position: relative;
+    display: inline-block;
+    width: 555px;
+    height: 300px;
+    top: -270px;
+    left: 150px;
+    background-color: rgba(247, 247, 247, 1);
+}
+.conatiner3 .vision h2{
+    position: relative;
+    left: 50px;
+    top: 30px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: rgba(17, 16, 16, 1);
+}
+.conatiner3 .vision p{
+    position: relative;
+    width: 450px;
+    left: 50px;
+    top: 50px;
+    font-size: 0.9rem;
+    color: rgba(97, 97, 97, 1);
+}
+.conatiner3 button{
+    position: relative;
+    width: 130px;
+    height: 40px;
+    top: 90px;
+    left: 50px;
+    border: 0px;
+    background-color: rgba(17, 16, 16, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transition: .3s;
+}
+.conatiner3 button:hover{
+    background-color: rgb(124, 124, 124);
+}
+
+
+/* ---- CREATIVE-SOLUTION ---- */
+
+
+.creative-solution{
+    position: relative;
+    display: block;
+    width: 450px;
+    left: 150px;
+}
+.creative-solution h1{
+    font-size: 2.3rem;
+    color: rgba(17, 16, 16, 1);
+}
+.creative-solution p{
+    position: relative;
+    top: 20px;
+    font-size: 0.9rem;
+    color: rgba(97, 97, 97, 1);
+}
+
+
+/* ---- CONTAINER 4 ---- */
+
+
+.conatiner4{
+    display: flex;
+    gap: 30px;
+    position: relative;
+    width: max-content;
+    left: 150px;
+    top: 60px;
+}
+.conatiner4 .r1121 img{
+    position: relative;
+    width: 200px;
+}
+.conatiner4 .r1122 img{
+    position: relative;
+    width: 200px;
+}
+.conatiner4 .r1123 img{
+    position: relative;
+    width: 200px;
+}
+.conatiner4 .r1124 img{
+    position: relative;
+    width: 383px;
+    top: -254px;
+}
+.video-tour{
+    position: relative;
+    width: 190px;
+    height: 90px;
+    top: 268px;
+    right: 220px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.video-tour img{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.video-tour .vector img{
+    position: relative;
+    top: -25px;
+    left: 43px;
+}
+.video-tour p{
+    position: relative;
+    width: 90px;
+    top: -65px;
+    left: 90px;
+}
+.watch{
+    color: rgba(137, 137, 137, 1);;
+}
+.vd{
+    color: rgba(17, 16, 16, 1);
+}
+.conatiner4 button{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    top: 310px;
+    border: 0px;
+    background-color: rgba(17, 16, 16, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transition: .3s;
+}
+.conatiner4 button:hover{
+    background-color: rgb(124, 124, 124);
+}
+
+
+/* ---- PROJECTS ---- */
+
+
+.projects h1{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100px;
+    top: -50px;
+    font-weight: 600;
+    color: rgba(17, 16, 16, 1);
+    border-bottom: 3px solid rgba(196, 196, 196, 1);
+}
+.projects p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+    color: rgba(97, 97, 97, 1);
+}
+
+
+/* ---- CONTAINER 5 ---- */
+
+
+.conatiner5{
+    position: relative;
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    top: 50px;
+    left: 150px;
+}
+.conatiner5 img{
+    width: 255px;
+}
+.conatiner5 h3{
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.conatiner5 p{
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.conatiner5 button{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    top: 410px;
+    left: 480px;
+    border: 0px;
+    background-color: rgba(17, 16, 16, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transition: .3s;
+}
+.conatiner5 button:hover{
+    background-color: rgb(124, 124, 124);
+}
+
+
+/* ---- COLLECTIONS ---- */
+
+
+.collections h1{
+    display: flex;
+    justify-content: center;
+    margin: 300px auto;
+    position: relative;
+    width: 280px;
+    font-weight: 600;
+    color: rgba(17, 16, 16, 1);
+}
+.collections .coll{
+    display: flex;
+    margin: -290px auto;
+    position: relative;
+    width: 140px;
+    border-bottom: 3px solid rgba(196, 196, 196, 1);
+}
+
+.collections p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 340px;
+    color: rgba(97, 97, 97, 1);
+}
+
+
+/* ---- CONTAINER 6 ---- */
+
+
+.conatiner6{
+    display: grid;
+    position: relative;
+    top: 220px;
+    left: 150px;
+    grid-template-columns: 270px 270px 270px 270px;
+    gap: 10px;
+    row-gap: 30px;
+}
+.conatiner6 img{
+    width: 240px;
+}
+.zurichvision{
+    width: 240px;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+.zurichvision:hover{
+    box-shadow: 3px 3px 25px 3px rgba(134, 134, 134, 0.445);
+}
+.zurichvision h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.zurichvision p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    top: -2px;
+    left: 30px;
+    color: rgba(17, 16, 16, 0.5);
+}
+.zurichvision del{
+    position: relative;
+    display: flex;
+    top: 17px;
+    left: 53px;
+    font-size: 0.6rem;
+    color: rgba(202, 202, 202, 1);
+}
+.zurichpearl{
+    width: 240px;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+.zurichpearl:hover{
+    box-shadow: 3px 3px 25px 3px rgba(134, 134, 134, 0.445);
+}
+.zurichpearl h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.zurichpearl p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    top: -2px;
+    left: 30px;
+    color: rgba(17, 16, 16, 0.5);
+}
+.zurichpearl del{
+    position: relative;
+    display: flex;
+    top: 17px;
+    left: 53px;
+    font-size: 0.7rem;
+    color: rgba(202, 202, 202, 1);
+}
+.zurichgrey{
+    width: 240px;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+.zurichgrey:hover{
+    box-shadow: 3px 3px 25px 3px rgba(134, 134, 134, 0.445);
+}
+.zurichgrey h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.zurichgrey p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    top: -2px;
+    left: 30px;
+    color: rgba(17, 16, 16, 0.5);
+}
+.zurichgrey del{
+    position: relative;
+    display: flex;
+    top: 17px;
+    left: 53px;
+    font-size: 0.6rem;
+    color: rgba(202, 202, 202, 1);
+}
+.zurichdarkgrey{
+    width: 240px;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+.zurichdarkgrey:hover{
+    box-shadow: 3px 3px 25px 3px rgba(134, 134, 134, 0.445);
+}
+.zurichdarkgrey h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+.zurichdarkgrey p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    top: -2px;
+    left: 30px;
+    color: rgba(17, 16, 16, 0.5);
+}
+.zurichdarkgrey del{
+    position: relative;
+    display: flex;
+    top: 15px;
+    left: 53px;
+    font-size: 0.6rem;
+    color: rgba(202, 202, 202, 1);
+}
+.windsorwhiteoak{
+    width: 240px;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+.windsorwhiteoak:hover{
+    box-shadow: 3px 3px 25px 3px rgba(134, 134, 134, 0.445);
+}
+.windsorwhiteoak h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+.windsorwhiteoak p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    left: 25px;
+    color: rgba(17, 16, 16, 0.5);
+}
+.windsorwhiteoak del{
+    position: relative;
+    display: flex;
+    top: 17px;
+    left: 53px;
+    font-size: 0.6rem;
+    color: rgba(202, 202, 202, 1);
+}
+.sicilygrey-decor{
+    width: 240px;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+.sicilygrey-decor:hover{
+    box-shadow: 3px 3px 25px 3px rgba(134, 134, 134, 0.445);
+}
+.sicilygrey-decor h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+.sicilygrey-decor p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    left: 30px;
+    top: -2px;
+    color: rgba(17, 16, 16, 0.5);
+}
+.sicilygrey-decor del{
+    position: relative;
+    display: flex;
+    top: 17px;
+    left: 40px;
+    font-size: 0.7rem;
+    color: rgba(202, 202, 202, 1);
+}
+.sardiniawhite{
+    width: 240px;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+.sardiniawhite:hover{
+    box-shadow: 3px 3px 25px 3px rgba(134, 134, 134, 0.445);
+}
+.sardiniawhite h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.sardiniawhite p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    left: 30px;
+    top: -2px;
+    color: rgba(17, 16, 16, 0.5);
+}
+.sardiniawhite del{
+    position: relative;
+    display: flex;
+    top: 17px;
+    left: 40px;
+    font-size: 0.7rem;
+    color: rgba(202, 202, 202, 1);
+}
+.sicilygrey{
+    width: 240px;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+.sicilygrey:hover{
+    box-shadow: 3px 3px 25px 3px rgba(134, 134, 134, 0.445);
+}
+.sicilygrey h2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.sicilygrey p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    left: 30px;
+    top: -2px;
+    color: rgba(17, 16, 16, 0.5);
+}
+.sicilygrey del{
+    position: relative;
+    display: flex;
+    top: 17px;
+    left: 40px;
+    font-size: 0.7rem;
+    color: rgba(202, 202, 202, 1);
+}
+.conatiner6 button{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    top: 70px;
+    left: 470px;
+    border: 0px;
+    background-color: rgba(17, 16, 16, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transition: .3s;
+}
+.conatiner6 button:hover{
+    background-color: rgb(124, 124, 124);
+}
+
+
+/* ---- SHOWROOMS ---- */
+
+
+.showrooms{
+    display: block;
+    position: relative;
+    width: 500px;
+    height: 370px;
+    top: 520px;
+    left: 700px;
+    background-color: rgba(249, 249, 249, 1);
+}
+.showrooms h1{
+    display: flex;
+    position: relative;
+    top: 50px;
+    left: 80px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.showrooms p{
+    display: flex;
+    position: relative;
+    width: 350px;
+    font-size: 0.9rem;
+    top: 90px;
+    left: 80px;
+    color: rgba(97, 97, 97, 1);
+}
+
+.ourshowrooms img{
+    z-index: -1;
+    position: absolute;
+    width: 620px;
+    top: -80px;
+    left: -540px;
+}
+.showrooms button{
+    position: relative;
+    top: 150px;
+    left: 80px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgba(17, 16, 16, 1);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: .3s;
+}
+.showrooms button:hover{
+    background-color: rgba(43, 43, 43, 0.616);
+}
+
+
+/* ---- FOOTER ---- */
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    top: 800px;
+}
+.footer-logo img{
+    position: relative;
+    width: 150px;
+    top: 40px;
+    left: 150px;
+}
+.socialmedia{
+    position: relative;
+    display: flex;
+    gap: 12px;
+    width: 80px;
+    top: 120px;
+    left: 150px;
+}
+.footer-products{
+    position: relative;
+    width: 150px;
+    top: -35px;
+    left: 500px;
+    list-style: none;
+}
+.footer-products a{
+    text-decoration: none;
+}
+
+.footer-products h5{
+    color: rgba(255, 255, 255, 1);
+}
+.footer-products p{
+    font-size: 0.9rem;
+    color: rgba(164, 164, 164, 1);
+}
+.footer-products p:hover{
+    color: rgba(255, 255, 255, 1);
+}
+.footer-services{
+    position: relative;
+    width: 170px;
+    top: -160px;
+    left: 700px;
+    list-style: none;
+}
+.footer-services a{
+    text-decoration: none;
+}
+
+.footer-services h5{
+    color: rgba(255, 255, 255, 1);
+}
+.footer-services p{
+    font-size: 0.9rem;
+    color: rgba(164, 164, 164, 1);
+}
+.footer-services p:hover{
+    color: rgba(255, 255, 255, 1);
+}
+.footer-contact{
+    position: relative;
+    width: 310px;
+    top: -265px;
+    left: 950px;
+    list-style: none;
+}
+.footer-contact a{
+    text-decoration: none;
+}
+
+.footer-contact h5{
+    color: rgba(255, 255, 255, 1);
+}
+.footer-contact p{
+    font-size: 0.9rem;
+    color: rgba(164, 164, 164, 1);
+}
+.footer-contact p:hover{
+    color: rgba(255, 255, 255, 1);
+}
+.copyright{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    top: -150px;
+    left: 150px;
+    width: 1000px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 0.9rem;
+}
