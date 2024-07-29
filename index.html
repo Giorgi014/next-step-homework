@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/homelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home Design</title>
 </head>
 <body>
     <div class="logo">
-        <img src="img/logo1.png">
+        <a href="./index.html"><img src="img/logo1.png"></a>
     </div>
     <nav>
         <div class="search-icon">
@@ -16,7 +18,7 @@
         </div>
         <div class="navigation-bar">
             <ul>
-                <a href="#"><li>HOME</li></a>
+                <a href="./index.html"><li>HOME</li></a>
                 <a href="#"><li>SPACES</li></a>
                 <a href="#"><li>PRODUCTS & SERVICES</li></a>
                 <a href="#"><li>SHOWROOMS</li></a>
@@ -29,6 +31,28 @@
             <a href="#"><img src="img/cart.png"></a>
             <a href="#"><img src="img/favorites.png"></a>
             <a href="#"><img src="img/account.png"></a>
+        </div>
+        <div class="responsive-menu-icon">
+            <ul>
+                <li onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </div>
+        <div class="side-bar">
+            <li><a href="#"><i class="fa-solid fa-x"></i></a></li>
+            <ul>
+                <a href="./index.html"><li>HOME</li></a>
+                <a href="#"><li>SPACES</li></a>
+                <a href="#"><li>PRODUCTS & SERVICES</li></a>
+                <a href="#"><li>SHOWROOMS</li></a>
+                <a href="#"><li>COMPANY</li></a>
+                <a href="#"><li>MEDIA</li></a>
+                <a href="#"><li>CONTACT</li></a>
+            </ul>
+            <div class="side-bar-icons">
+                <a href="#"><img src="img/cart.png"></a>
+                <a href="#"><img src="img/favorites.png"></a>
+                <a href="#"><img src="img/account.png"></a>
+            </div>
         </div>
     </nav>
     <div class="conatiner1">
@@ -44,7 +68,7 @@
         </div>
     </div>
     <div class="products">
-        <h1>Products</h1>
+        <a href="#"><h1>Products</h1></a>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has</p>
         <p>been the industry's standard dummy text.</p>
@@ -93,7 +117,7 @@
         </div>
     </div>
     <div class="creative-solution">
-        <h1>Creative Solutions <br> by Professional Designers</h1>
+        <a href="#"><h1>Creative Solutions <br> by Professional Designers</h1></a>
         <p>Penatibus sem vitae mollis luctus mi tellus. 
         Maximus eu eleifend aptent dapibus metus maecenas consequat. 
         Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. 
@@ -113,7 +137,7 @@
         <button>Read more</button>
     </div>
     <div class="projects">
-        <h1>Projects</h1>
+        <a href="#"><h1>Projects</h1></a>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has</p>
         <p>been the industry's standard dummy text.</p>
@@ -142,7 +166,7 @@
         <button>View All</button>
     </div>
     <div class="collections">
-        <h1>Tile Collections</h1>
+        <a href="#"><h1>Tile Collections</h1></a>
         <div class="coll"></div>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has</p>
@@ -200,7 +224,7 @@
     </div>
     <footer>
         <div class="footer-logo">
-            <a href="#"><img src="img/logo.png"></a>
+            <a href="./index.html"><img src="img/logo.png"></a>
         </div>
         <div class="socialmedia">
             <a href="#"><img src="img/facebook.png"></a>
@@ -231,5 +255,9 @@
             <h6>Created with love by thecreation.design</h6>
         </div>
     </footer>
+
+
+
+    <script src="app.js"></script>
 </body>
 </html>

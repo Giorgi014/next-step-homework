@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: "M PLUS Rounded 1c",sans-serif;
+    text-decoration: none;
 }
 body{
     background-color: rgb(253, 248, 255);
@@ -14,27 +15,33 @@ body{
     width: max-content;
     margin: 50px auto;
 }
-
+.side-bar{
+    display: none;
+}
+.responsive-menu-icon{
+    display: none;
+}
 nav{
-    width: 100%;
-    position: absolute;
+    width: max-content;
     display: flex;
     justify-content: space-between;
     margin-left: 150px;
 }
 nav .search-icon{
-    position: relative;
     top: 30px;
+    width: 30px;
 }
-nav ul li{
-    position: relative;
-    justify-content: center;
-    left: -130px;
-    margin: 10px;
-    float: left;
-    list-style: none;
+nav .navigation-bar{
     font-size: 1rem;
-    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 140px;
+ }
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 nav a{
     text-decoration: none;
@@ -47,23 +54,24 @@ nav a:hover{
 nav .icons{
     display: flex;
     gap: 20px;
-    right: 250px;
-    position: relative;
-    top: 30px;
+    margin-left: 130px;
 }
+
 
 /* ---- CONTAINER 1 ----*/
 
+
 .conatiner1 img{
+    display: block;
     width: 100%;
-    position: relative;
-    top: 70px;
+    margin-top: 70px;
 }
-.info-container{
-    position: relative;
+.conatiner1 .info-container{
+    display: inline-block;
+    position: absolute;
     width: 600px;
     height: 300px;
-    top: -270px;
+    top: 300px;
     left: 650px;
     background: rgba(0, 0, 0, 0.36);
 }
@@ -71,7 +79,7 @@ nav .icons{
     position: relative;
     display: flex;
     justify-content: center;
-    font-weight: 700;
+    font-weight: bold;
     top: 20px;
     color: rgba(255, 255, 255, 1);
 }
@@ -94,7 +102,7 @@ nav .icons{
     border: none;
     background-color: #fff;
     color: rgba(0, 0, 0, 1);
-    font-weight: 700;
+    font-weight: bold;
     font-size: 0.9rem;
     cursor: pointer;
     transition: .3s;
@@ -113,10 +121,9 @@ nav .icons{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    position: relative;
     width: 100px;
-    top: -150px;
-    font-weight: 600;
+    margin-top: 50px;
+    font-weight: bold;
     color: rgba(17, 16, 16, 1);
     border-bottom: 3px solid rgba(196, 196, 196, 1);
 }
@@ -124,21 +131,22 @@ nav .icons{
     display: flex;
     justify-content: center;
     position: relative;
-    top: -100px;
+    top: 15px;
     color: rgba(97, 97, 97, 1);
 }
 
+
 /* ---- CONTAINER 2 ---- */
+
 
 .conatiner2{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 259px;
     gap: 20px;
-    position: relative;
-    width: 70%;
+    width: 82%;
     max-width: max-content;
-    left: 150px;
+    margin: 70px 150px;
 }
 .conatiner2 .bathroom img{
     width: 440px;
@@ -199,21 +207,19 @@ nav .icons{
     color: rgba(180, 180, 180, 1);
     font-size: 0.8rem;
 }
-
-
 .conatiner2 .outdoor img{
     width: 340px;
+    display:  block;
 }
 .outdoor .outdr{
-    display: inline-block;
+    display: block;
     justify-content: center;
-    position: absolute;
+    position: relative;
     width: 315px;
     height: 80px;
     background-color: rgba(17, 16, 16, 1);
     border: 1px solid rgba(255, 255, 255, 1);
-    top: 140px;
-    left: 751px;
+    margin: -60px auto;
 }
 .outdoor .outdr h3{
     display: flex;
@@ -230,7 +236,6 @@ nav .icons{
     color: rgba(180, 180, 180, 1);
     font-size: 0.7rem;
 }
-
 .conatiner2 .kitchen{
     margin-top: -12px;
     grid-row: 2/4;
@@ -242,13 +247,13 @@ nav .icons{
 .kitchen .ktchn{
     display: inline-block;
     justify-content: center;
-    position: absolute;
+    position: relative;
     width: 315px;
     height: 80px;
     background-color: rgba(17, 16, 16, 1);
     border: 1px solid rgba(255, 255, 255, 1);
-    top: 404px;
-    left: 751px;
+    top: -72px;
+    left: 12px;
 }
 .kitchen .ktchn h3{
     display: flex;
@@ -270,26 +275,25 @@ nav .icons{
 /* ---- CONTAINER 3 ---- */
 
 .conatiner3 img{
-    position: relative;
     width: max-content;
-    max-width: 960px;
-    left: 270px;
-    top: 80px;
+    width: 960px;
+    margin: 80px 270px;
 }
 .conatiner3 .vision{
     position: relative;
     display: inline-block;
     width: 555px;
     height: 300px;
-    top: -270px;
+    top: -420px;
     left: 150px;
     background-color: rgba(247, 247, 247, 1);
+    margin-bottom: -130px;
 }
 .conatiner3 .vision h2{
     position: relative;
     left: 50px;
     top: 30px;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 2rem;
     color: rgba(17, 16, 16, 1);
 }
@@ -312,6 +316,7 @@ nav .icons{
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
     transition: .3s;
+    font-weight: bold;
 }
 .conatiner3 button:hover{
     background-color: rgb(124, 124, 124);
@@ -322,14 +327,14 @@ nav .icons{
 
 
 .creative-solution{
-    position: relative;
     display: block;
     width: 450px;
-    left: 150px;
+    margin-left: 150px;
 }
 .creative-solution h1{
     font-size: 2.3rem;
     color: rgba(17, 16, 16, 1);
+    font-weight: bold;
 }
 .creative-solution p{
     position: relative;
@@ -345,27 +350,21 @@ nav .icons{
 .conatiner4{
     display: flex;
     gap: 30px;
-    position: relative;
     width: max-content;
-    left: 150px;
-    top: 60px;
+    margin: 60px 150px;
 }
 .conatiner4 .r1121 img{
-    position: relative;
     width: 200px;
 }
 .conatiner4 .r1122 img{
-    position: relative;
     width: 200px;
 }
 .conatiner4 .r1123 img{
-    position: relative;
     width: 200px;
 }
 .conatiner4 .r1124 img{
-    position: relative;
     width: 383px;
-    top: -254px;
+    margin-top: -254px;
 }
 .video-tour{
     position: relative;
@@ -402,12 +401,13 @@ nav .icons{
     position: absolute;
     width: 130px;
     height: 40px;
-    top: 310px;
+    margin-top: 320px;
     border: 0px;
     background-color: rgba(17, 16, 16, 1);
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
     transition: .3s;
+    font-weight: bold;
 }
 .conatiner4 button:hover{
     background-color: rgb(124, 124, 124);
@@ -420,19 +420,16 @@ nav .icons{
 .projects h1{
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-    position: relative;
+    margin: 150px auto;
     width: 100px;
-    top: -50px;
-    font-weight: 600;
+    font-weight: bold;
     color: rgba(17, 16, 16, 1);
     border-bottom: 3px solid rgba(196, 196, 196, 1);
+    margin-bottom: 15px;
 }
 .projects p{
     display: flex;
     justify-content: center;
-    position: relative;
-    top: -30px;
     color: rgba(97, 97, 97, 1);
 }
 
@@ -441,12 +438,10 @@ nav .icons{
 
 
 .conatiner5{
-    position: relative;
     display: flex;
     width: max-content;
     gap: 20px;
-    top: 50px;
-    left: 150px;
+    margin: 70px 150px;
 }
 .conatiner5 img{
     width: 255px;
@@ -464,16 +459,19 @@ nav .icons{
     justify-content: center;
 }
 .conatiner5 button{
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 130px;
     height: 40px;
-    top: 410px;
-    left: 480px;
+    margin: 400px -630px;
+    margin-bottom: 0;
     border: 0px;
     background-color: rgba(17, 16, 16, 1);
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
     transition: .3s;
+    font-weight: bold;
 }
 .conatiner5 button:hover{
     background-color: rgb(124, 124, 124);
@@ -486,16 +484,16 @@ nav .icons{
 .collections h1{
     display: flex;
     justify-content: center;
-    margin: 300px auto;
-    position: relative;
+    margin: 150px auto;
+    margin-bottom: 10px;
     width: 280px;
-    font-weight: 600;
+    font-weight: bold;
     color: rgba(17, 16, 16, 1);
 }
 .collections .coll{
     display: flex;
-    margin: -290px auto;
-    position: relative;
+    margin: 0 auto;
+    margin-bottom: 25px;
     width: 140px;
     border-bottom: 3px solid rgba(196, 196, 196, 1);
 }
@@ -503,8 +501,6 @@ nav .icons{
 .collections p{
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 340px;
     color: rgba(97, 97, 97, 1);
 }
 
@@ -514,9 +510,7 @@ nav .icons{
 
 .conatiner6{
     display: grid;
-    position: relative;
-    top: 220px;
-    left: 150px;
+    margin: 100px 150px;
     grid-template-columns: 270px 270px 270px 270px;
     gap: 10px;
     row-gap: 30px;
@@ -782,6 +776,7 @@ nav .icons{
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
     transition: .3s;
+    font-weight: bold;
 }
 .conatiner6 button:hover{
     background-color: rgb(124, 124, 124);
@@ -796,7 +791,7 @@ nav .icons{
     position: relative;
     width: 500px;
     height: 370px;
-    top: 520px;
+    top: 150px;
     left: 700px;
     background-color: rgba(249, 249, 249, 1);
 }
@@ -805,7 +800,7 @@ nav .icons{
     position: relative;
     top: 50px;
     left: 80px;
-    font-weight: 700;
+    font-weight: bold;
     color: rgba(0, 0, 0, 1);
 }
 .showrooms p{
@@ -834,7 +829,7 @@ nav .icons{
     border: none;
     background-color: rgba(17, 16, 16, 1);
     color: #fff;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 0.9rem;
     cursor: pointer;
     transition: .3s;
@@ -848,11 +843,10 @@ nav .icons{
 
 
 footer{
-    position: relative;
     width: 100%;
     height: 300px;
     background-color: black;
-    top: 800px;
+    margin-top: 400px;
 }
 .footer-logo img{
     position: relative;
@@ -940,4 +934,97 @@ footer{
     width: 1000px;
     color: rgba(255, 255, 255, 1);
     font-size: 0.9rem;
+}
+
+
+/* ---- ALL RESPONSIVE ---- */
+
+
+/* ---- LOGO RESPONSIVE ---- */
+
+
+@media screen and (max-width:900px){
+    .logo{
+        width: 300px;
+        margin: 40px 320px;
+    }
+}
+@media screen and (max-width:600px){
+    .logo{
+        width: 200px;
+        margin: 40px 250px;
+    }
+}
+
+
+/* ---- NAV RESPONSIVE ---- */
+
+
+@media screen and (max-width:900px){
+    nav .navigation-bar{
+        display: none;
+    }
+    nav .icons{
+        display: none;
+    }
+    .responsive-menu-icon{
+        display: block;
+    }
+    .responsive-menu-icon .fa-bars{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 810px;
+        font-size: 1.5rem;
+    }
+    .responsive-menu-icon .fa-solid a{
+        color: black;
+    }
+    .side-bar{
+        position: fixed;
+        top: 0;
+        left: 650px;
+        height: 100vh;
+        width: 250px;
+        z-index: 99;
+        background-color: white;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+    }
+    .side-bar ul{
+        position: fixed;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px 40px;
+        text-align: center;
+        font-size: 1rem;
+        transition: .2s;
+    }
+    .side-bar a{
+        color: rgba(0, 0, 0, 1);
+        width: 170px;
+    }
+    .side-bar a:hover{
+        color: white;
+        background-color: gray;
+        width: 170px;
+        height: 20px 30px;
+    }
+    
+    .side-bar-icons{
+        position: fixed;
+        height: max-content;
+        margin: 90vh 70px;
+        display: flex;
+        gap: 30px;
+        background: none;
+        width: 60px;
+    }
+    .side-bar-icons a{
+        background-color: none;
+    }
+    
 }
